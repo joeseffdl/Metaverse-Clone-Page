@@ -8,7 +8,7 @@ function Navigation() {
         <nav className="py-10 flex align-center justify-center">
             <ul className="flex items-center gap-10 text-xl font-burtons">
                 <li className="hover:-translate-x-2 ease-in-out duration-300">
-                  <a href="/projects">
+                  <a href="#">
                     Projects
                   </a>
                 </li> 
