@@ -51,7 +51,7 @@ function Home() {
                     <div className="
                         md:h-96 md:w-96
                         relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 m-15 mx-auto overflow-hidden">
-                        <Image src={zephy} layout="fill" objectFit="cover" alt="Image of Joseph De Leon" />
+                        <Image src={zephy} layout="fill"  alt="Image of Joseph De Leon" />
                     </div>
                 </section>
                 <section>

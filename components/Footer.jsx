@@ -1,4 +1,3 @@
-import React from "react";
 import {AiFillGithub, AiFillFacebook, AiFillYoutube} from "react-icons/ai"
 
 function Footer() {
