@@ -4,6 +4,7 @@ import Link from 'next/link'
 function Navigation() {
   const [showNav, setShowNav] = useState(false)
   const [scrollPosition, setScrollPosition] = useState(0)
+
   const handleScroll = () => {
     const position = window.pageYOffset
     setScrollPosition(position)
@@ -24,7 +25,7 @@ function Navigation() {
         <nav className="py-10 flex align-center justify-center">
             <ul className="flex items-center gap-10 text-xl font-burtons">
                 <li className="hover:-translate-x-2 ease-in-out duration-300">
-                  <Link href="">
+                  <Link href="projects">
                     Projects
                   </Link>
                 </li> 
@@ -34,7 +35,7 @@ function Navigation() {
                   </Link>
                 </li>  
                 <li className="hover:translate-x-2 ease-in-out duration-300">
-                  <Link href="#" className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md">
+                  <Link href="/resume">
                     Resume
                   </Link>
                 </li>
@@ -44,5 +45,7 @@ function Navigation() {
     </>
   )
 }
-
 export default Navigation;
+
+// Button style 
+// className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md"
