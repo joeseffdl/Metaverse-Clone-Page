@@ -24,7 +24,7 @@ function Footer() {
                 </li>
             </ul>
         </section>
-  )
+    )
 }
 
 export default Footer;
