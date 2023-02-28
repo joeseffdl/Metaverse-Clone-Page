@@ -1,24 +1,31 @@
-import Head from "next/head"
-import Image from "next/image"
-import zephy from "../public/zephy.jpg"
-import Typewriter from 'typewriter-effect';
+import Head from "next/head";
+import Image from "next/image";
+import zephy from "../public/zephy.jpg";
+import Typewriter from "typewriter-effect";
 
 function Home() {
-    return (
-        <>
-            <Head>
-                <title>E-Portfolio by Joseph De Leon</title>
-                <meta name="description" content="Portfolio by Joseph De Leon" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <main className="
-                scroll-smooth
-                lg:px-40
-                md:px-20
-                px-10 pt-20
-                bg-orange-200/75">
-                <section className="py-10">
-                    <div className="text-center p-10">
+  return (
+    <>
+      <Head>
+        <title>E-Portfolio by Joseph De Leon</title>
+        <meta name="description" content="Portfolio by Joseph De Leon" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main
+      // className="
+      // scroll-smooth
+      // lg:px-40
+      // md:px-20
+      // px-10 pt-20
+      // bg-orange-200/75
+      // "
+      >
+        <section className="relative flex min-h-screen items-center justify-center bg-black">
+          <h1 class="animate-torch select-none whitespace-nowrap bg-gradient-to-r from-black via-white to-black bg-[length:100px_30px] bg-clip-text bg-no-repeat text-lg font-bold uppercase text-transparent sm:bg-[length:200px_50px] sm:text-4xl">
+            JOSEPH M DE LEON
+          </h1>
+
+          {/* <div className="text-center p-10">
                         <h2 className="
                             md:text-6xl
                             text-4xl py-2 text-teal-400 font-semibold">
@@ -46,9 +53,9 @@ function Home() {
                         md:h-96 md:w-96
                         relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 m-15 mx-auto overflow-hidden">
                         <Image src={zephy} layout="fill" alt="Image of Joseph De Leon" />
-                    </div>
-                </section>
-                <section>
+                    </div> */}
+        </section>
+        {/* <section>
                     <div>
                         <h3 className="text-3xl pt-20 py-2">Main Tech Stack</h3>
                         <p className="text-md py-2 leading-8 text-gray-800">For building the frontend part of my application, I mainly use <a href="https://reactjs.org/"><span className="text-teal-600 font-semibold">React JS</span></a> which is JavaScript library for building user interfaces. While expanding its capabilities alongside with <a href="https://nextjs.org/"><span className="text-teal-600 font-semibold">Next JS</span></a> to streamline the development process.</p>
@@ -102,11 +109,10 @@ function Home() {
                             )
                         })} 
                     </div>
-                </section>
-                
-            </main>
-        </>
-    )
+                </section> */}
+      </main>
+    </>
+  );
 }
 
 export default Home;

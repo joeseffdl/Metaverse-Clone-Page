@@ -1,22 +1,18 @@
-import CustomNavigation from "../../components/CustomNavigation"
-import Footer from "../../components/Footer"
+import CustomNavigation from "../../components/CustomNavigation";
+import Footer from "../../components/Footer";
 
 function todo() {
-    return (
-        <>
-            Todo
-        </>
-  )
+  return <>Todo</>;
 }
 
 export default todo;
 
 todo.getLayout = function PageLayout(page) {
-    return (
-        <>
-            <CustomNavigation />
-            {page}
-            <Footer />
-        </>
-    )
-}
+  return (
+    <>
+      <CustomNavigation />
+      {page}
+      <Footer />
+    </>
+  );
+};
