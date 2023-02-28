@@ -1,9 +1,5 @@
 function CustomNavigation() {
-    return (
-        <>
-            
-        </>
-  )
+  return <></>;
 }
 
 export default CustomNavigation;
