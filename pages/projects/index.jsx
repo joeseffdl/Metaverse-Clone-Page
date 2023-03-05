@@ -4,7 +4,7 @@ function Projects() {
   return (
     <>
       <main
-        className="scroll-smooth
+        className="
                 lg:px-40
                 md:px-20
                 px-10 pt-20

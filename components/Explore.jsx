@@ -13,7 +13,7 @@ export default function Explore() {
                     <button className="to mt-5 min-w-[10rem] rounded-full bg-orange-500 bg-gradient-to-r from-rose-500 px-5 py-3 font-bold text-white shadow-xl shadow-rose-400">Explore</button>
                 </div>
 
-                <div className="scrollbar-hide mt-14 flex w-full snap-x snap-mandatory scroll-px-10 gap-10 overflow-x-scroll scroll-smooth px-10">
+                <div className="scrollbar-hide mt-14 flex w-full snap-x snap-mandatory scroll-px-10 gap-10 overflow-x-scroll px-10">
                     <div className="md:2/3 relative aspect-[2/3] w-[90%] shrink-0 snap-start snap-always rounded-xl bg-orange-100 sm:w-[44%] md:w-[30%]">
                         <div className="absolute bottom-0 z-10 w-full rounded-xl bg-gradient-to-t from-black px-5 py-3">
                             <h2 className="mt-4 text-xl font-bold text-white">Cangu</h2>

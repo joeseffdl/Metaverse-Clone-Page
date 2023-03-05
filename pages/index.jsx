@@ -12,13 +12,12 @@ function Home() {
     return (
         <main
             // className="
-            // scroll-smooth
             // lg:px-40
             // md:px-20
             // px-10 pt-20
             // bg-orange-200/75
             // "
-            className="snap-y snap-mandatory overflow-y-auto scroll-smooth"
+            className="snap-y snap-mandatory overflow-y-auto"
         >
             <Hero />
             <About />
