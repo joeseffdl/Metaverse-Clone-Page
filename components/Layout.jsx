@@ -6,7 +6,7 @@ function Layout({ children }) {
   return (
     <>
       <HeadComponent />
-      {/* <Navigation /> */}
+      <Navigation />
       <main>{children}</main>
       {/* <Footer /> */}
     </>

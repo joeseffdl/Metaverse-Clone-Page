@@ -1,8 +1,9 @@
-import Image from "next/image"
+import Image from "next/image";
 
-export default function GetStarted() {
-    <section>
-        <div>
+const GetStarted = () => (
+  <section>
+    Get Started
+    {/* <div>
             <h3 className="text-3xl pt-20 py-2">Main Tech Stack</h3>
             <p className="text-md py-2 leading-8 text-gray-800">For building the frontend part of my application, I mainly use <a href="https://reactjs.org/"><span className="text-teal-600 font-semibold">React JS</span></a> which is JavaScript library for building user interfaces. While expanding its capabilities alongside with <a href="https://nextjs.org/"><span className="text-teal-600 font-semibold">Next JS</span></a> to streamline the development process.</p>
             <p className="text-md py-2 leading-8 text-gray-800">I also use <a href="https://firebase.google.com/"><span className="text-teal-600 font-semibold">Firebase</span></a> for the backend of my application which I took advantage of its database and authentication services. Wherein I host and deploy my application in <a href="https://vercel.com/"><span className="text-teal-600 font-semibold">Vercel</span></a>.</p>
@@ -54,6 +55,8 @@ export default function GetStarted() {
                     </div>
                 )
             })}
-        </div>
-    </section>
-};
+        </div> */}
+  </section>
+);
+
+export default GetStarted;

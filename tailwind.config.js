@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme")
-const plugin = require("tailwindcss/plugin")
+const defaultTheme = require("tailwindcss/defaultTheme");
+const plugin = require("tailwindcss/plugin");
 module.exports = {
   darkMode: "class",
   content: [
@@ -44,13 +44,13 @@ module.exports = {
           "animation-delay": (value) => {
             return {
               "animation-delay": value,
-            }
+            };
           },
         },
         {
           values: theme("transitionDelay"),
         }
-      )
+      );
     }),
   ],
-}
+};
