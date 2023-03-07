@@ -24,7 +24,7 @@ function Navigation() {
 
   // ${scrollPosition > 0 || showNav ? "bg-white" : ""}
   return (
-    <motion.main
+    <motion.nav
       variants={navVariants}
       initial="hidden"
       whileInView="show"
@@ -44,6 +44,13 @@ function Navigation() {
         <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
           Zeph
         </h2>
+        <Image
+          src="/menu.svg"
+          alt="Menu"
+          width={24}
+          height={24}
+          className="object-contain"
+        />
       </div>
       {/* <nav className="py-10 flex align-center justify-center">
         <ul className="flex items-center gap-10 text-xl font-burtons">
@@ -60,7 +67,7 @@ function Navigation() {
           </li>
         </ul>
       </nav> */}
-    </motion.main>
+    </motion.nav>
   );
 }
 export default Navigation;
