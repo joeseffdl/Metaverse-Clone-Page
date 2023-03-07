@@ -1,7 +1,11 @@
-export default function About() {
-    return (
-        <section className="group select-none flex h-screen snap-start snap-always items-center justify-center bg-green-500 bg-opacity-10">
-            <div>
+const About = () => (
+  // group select-none flex h-screen snap-start snap-always items-center justify-center bg-green-500 bg-opacity-10
+  <section
+    className="
+        "
+  >
+    About
+    {/* <div>
                 <div className="overflow-hidden text-7xl font-medium">
                     <div className="group-hover/wrap:translate-y-full group-hover:animate-reveal">
                         Animate
@@ -12,7 +16,8 @@ export default function About() {
                         Anything
                     </div>
                 </div>
-            </div>
-        </section>
-    )
-};
+            </div> */}
+  </section>
+);
+
+export default About;

@@ -1,9 +1,13 @@
-import Image from "next/image"
+import Image from "next/image";
 
-export default function Explore() {
-    return (
-        <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
-            <div className="absolute inset-auto h-96 w-96 scale-150 bg-orange-200 opacity-20 blur-3xl"></div>
+const Explore = () => (
+  // relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gray-50 py-6 sm:py-12
+  <section
+    className="
+        "
+  >
+    Explore
+    {/* <div className="absolute inset-auto h-96 w-96 scale-150 bg-orange-200 opacity-20 blur-3xl"></div>
 
             <div className="absolute inset-auto h-96 w-96 translate-x-full scale-150 bg-green-200 opacity-20 blur-3xl"></div>
             <div className="w-full">
@@ -70,7 +74,8 @@ export default function Explore() {
                         <Image src="https://source.unsplash.com/tVqQSfXQ_SI" alt="image" width={384} height={384} class="h-full w-full rounded-xl object-cover" />
                     </div>
                 </div>
-            </div>
-        </section>
-    )
-};
+            </div> */}
+  </section>
+);
+
+export default Explore;
