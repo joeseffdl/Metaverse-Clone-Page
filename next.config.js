@@ -3,14 +3,15 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "source.unsplash.com",
-        port: "",
-        pathname: "/**",
-      },
-    ],
+    domains: ["source.unsplash.com"],
+    // remotePatterns: [
+    //   {
+    //     protocol: "https",
+    //     hostname: "source.unsplash.com",
+    //     port: "",
+    //     pathname: "/**",
+    //   },
+    // ],
   },
 };
 
