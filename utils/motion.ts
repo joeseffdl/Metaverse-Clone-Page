@@ -8,7 +8,7 @@ interface motionProps {
 }
 
 type staggerProps = {
-  staggerChildren: string,
+  staggerChildren: string
   delayChildren: string
 }
 
@@ -31,9 +31,14 @@ export const navVariants = {
       delay: 1,
     },
   },
-};
+}
 
-export const slideIn = ({direction, type, delay, duration}:Omit<motionProps, "hidden" | "show">) => ({
+export const slideIn = ({
+  direction,
+  type,
+  delay,
+  duration,
+}: Omit<motionProps, "hidden" | "show">) => ({
   hidden: {
     x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
     y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
@@ -48,9 +53,12 @@ export const slideIn = ({direction, type, delay, duration}:Omit<motionProps, "hi
       ease: "easeOut",
     },
   },
-});
+})
 
-export const staggerContainer: {} = ({ staggerChildren, delayChildren }: staggerProps ) => ({
+export const staggerContainer: {} = ({
+  staggerChildren,
+  delayChildren,
+}: staggerProps) => ({
   hidden: {},
   show: {
     transition: {
@@ -58,7 +66,7 @@ export const staggerContainer: {} = ({ staggerChildren, delayChildren }: stagger
       delayChildren,
     },
   },
-});
+})
 
 export const textVariant = (delay: number) => ({
   hidden: {
@@ -74,7 +82,7 @@ export const textVariant = (delay: number) => ({
       delay,
     },
   },
-});
+})
 
 export const textContainer = {
   hidden: {
@@ -84,7 +92,7 @@ export const textContainer = {
     opacity: 1,
     transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
   }),
-};
+}
 
 export const textVariant2 = {
   hidden: {
@@ -99,9 +107,14 @@ export const textVariant2 = {
       ease: "easeIn",
     },
   },
-};
+}
 
-export const fadeIn = ({ direction, type, delay, duration }: Omit<motionProps, "hidden" & "show">) => ({
+export const fadeIn = ({
+  direction,
+  type,
+  delay,
+  duration,
+}: Omit<motionProps, "hidden" & "show">) => ({
   hidden: {
     x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
     y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
@@ -118,7 +131,7 @@ export const fadeIn = ({ direction, type, delay, duration }: Omit<motionProps, "
       ease: "easeOut",
     },
   },
-});
+})
 
 export const planetVariants = (direction: string) => ({
   hidden: {
@@ -134,9 +147,12 @@ export const planetVariants = (direction: string) => ({
       delay: 0.5,
     },
   },
-});
+})
 
-export const zoomIn = ({ delay, duration }: Pick<motionProps, "delay" | "duration">) => ({
+export const zoomIn = ({
+  delay,
+  duration,
+}: Pick<motionProps, "delay" | "duration">) => ({
   hidden: {
     scale: 0,
     opacity: 0,
@@ -151,7 +167,7 @@ export const zoomIn = ({ delay, duration }: Pick<motionProps, "delay" | "duratio
       ease: "easeOut",
     },
   },
-});
+})
 
 export const footerVariants = {
   hidden: {
@@ -172,4 +188,4 @@ export const footerVariants = {
       delay: 0.5,
     },
   },
-};
+}

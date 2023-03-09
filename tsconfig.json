@@ -31,6 +31,6 @@
     ".next/types/**/*.ts",
     "app/auth/Navigation.tsx",
     "app/layout.jsx"
-, "components/Layout.jsx", "utils/motion.ts", "sections/Hero.jsx"  ],
+, "components/Layout.jsx", "utils/motion.ts", "sections/Hero.jsx", "sections/About.jsx"  ],
   "exclude": ["node_modules"]
 }
