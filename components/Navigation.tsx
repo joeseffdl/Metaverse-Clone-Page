@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import styles from "../styles";
-import { navVariants } from "../utils/motion";
+import styles from "@/styles";
+import { navVariants } from "@/utils/motion";
 import Image from "next/image";
 
 function Navigation() {
   const [showNav, setShowNav] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
-
+  const { xPaddings, innerWidth } = styles
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
@@ -28,11 +28,11 @@ function Navigation() {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`${styles.xPaddings} py-8 relative`}
+      className={`${xPaddings} py-8 relative`}
     >
       <div className="absolute w-[50%] inset-0 gradient-01" />
       <div
-        className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
+        className={`${innerWidth} mx-auto flex justify-between gap-8`}
       >
         <Image
           src="/search.svg"
@@ -68,7 +68,7 @@ function Navigation() {
         </ul>
       </nav> */}
     </motion.nav>
-  );
+  )
 }
 export default Navigation;
 
