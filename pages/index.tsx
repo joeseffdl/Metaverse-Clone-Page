@@ -1,5 +1,4 @@
-import Navigation from "../components/Navigation"
-import Footer from "../components/Footer"
+import { Navigation, Footer } from "@/components"
 import {
   About,
   Explore,
@@ -9,7 +8,7 @@ import {
   Insights,
   WhatsNew,
   World,
-} from "../sections"
+} from "@/sections"
 
 const Home = () => (
   <div
