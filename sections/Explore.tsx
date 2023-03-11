@@ -1,13 +1,36 @@
 import Image from "next/image";
+import { useState } from "react";
+import { motion } from "framer-motion"
+import { ExploreCard, TitleText, TypingText } from "../components"
+import styles from "@/styles"
+import { staggerContainer } from "../utils/motion"
+import { exploreWorlds } from "../constants"
 
-const Explore = () => (
-  // relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gray-50 py-6 sm:py-12
-  <section
-    className="
-        "
-  >
-    Explore
-    {/* <div className="absolute inset-auto h-96 w-96 scale-150 bg-orange-200 opacity-20 blur-3xl"></div>
+const Explore = () => {
+    const [active, setActive] = useState("world-2")
+    return (
+        // relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gray-50 py-6 sm:py-12
+        <section
+            className={`${styles.paddings}`}
+            id="explore"
+        >
+            <motion.div
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+                className={`${styles.innerWidth} mx-auto flex flex-col`}
+            >
+                <TypingText title="| The World" textStyles="text-center" />
+                <TitleText title={<>Choose the world you want <br className="md:block hidden" /> to explore</>} textStyles="text-center" />
+                <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+                    {exploreWorlds.map((world, index) => (
+                        <ExploreCard key={world.id} {...world} index={index} active={active} handleClick={setActive} />
+                    ))}
+                </div>
+            </motion.div>
+            Explore
+            {/* <div className="absolute inset-auto h-96 w-96 scale-150 bg-orange-200 opacity-20 blur-3xl"></div>
 
             <div className="absolute inset-auto h-96 w-96 translate-x-full scale-150 bg-green-200 opacity-20 blur-3xl"></div>
             <div className="w-full">
@@ -75,7 +98,8 @@ const Explore = () => (
                     </div>
                 </div>
             </div> */}
-  </section>
-);
+        </section>
+    )
+};
 
 export default Explore;
