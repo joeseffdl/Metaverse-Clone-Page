@@ -1,26 +1,26 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { StartSteps, TitleText, TypingText } from "../components"
-import styles from "@/styles"
 import { staggerContainer, fadeIn, planetVariants } from "../utils/motion"
 import { startingFeatures } from "../constants"
 
 const GetStarted = () => (
-    <section className={`${styles.paddings} relative z-10`}>
+    <section className={`sm:p-16 xs:p-8 px-6 py-12 relative z-10`}>
         <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
             viewport={{ once: 'false', amount: 0.25 }}
-            className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
+            className={`2xl:max-w-[1280px] w-full mx-auto flex lg:flex-row flex-col gap-8`}
         >
             <motion.div
                 variants={planetVariants('left')}
-                className={`flex-1 ${styles.flexCenter}`}
+                className={`flex-1 flex justify-center items-center`}
             >
-                <img
-                    src="get-started.png"
+                <Image
+                    src="/get-started.png"
                     alt="Get Started"
+                    fill
                     className="w-[90%] h-[90%] object-contain"
                 />
             </motion.div>
