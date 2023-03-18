@@ -33,12 +33,12 @@ export const navVariants = {
   },
 }
 
-export const slideIn = ({
-  direction,
-  type,
-  delay,
-  duration,
-}: Omit<motionProps, "hidden" | "show">) => ({
+export const slideIn = (
+  direction: string,
+  type: string,
+  delay: number,
+  duration: number,
+) => ({
   hidden: {
     x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
     y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
@@ -109,12 +109,12 @@ export const textVariant2 = {
   },
 }
 
-export const fadeIn = ({
-  direction,
-  type,
-  delay,
-  duration,
-}: Omit<motionProps, "hidden" & "show">) => ({
+export const fadeIn = (
+  direction: string,
+  type: string,
+  delay: number,
+  duration: number
+) => ({
   hidden: {
     x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
     y: direction === "up" ? 100 : direction === "down" ? -100 : 0,

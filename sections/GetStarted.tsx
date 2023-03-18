@@ -10,7 +10,7 @@ const GetStarted = () => (
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: 'false', amount: 0.25 }}
+            viewport={{ once: false, amount: 0.25 }}
             className={`2xl:max-w-[1280px] w-full mx-auto flex lg:flex-row flex-col gap-8`}
         >
             <motion.div

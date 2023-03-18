@@ -7,7 +7,7 @@ const Feedback = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: "false", amount: 0.25 }}
+      viewport={{ once: false, amount: 0.25 }}
       className={`2xl:max-w-[1280px] w-full mx-auto flex flex-col lg:flex-row gap-6`}
     >
       <motion.div
@@ -24,14 +24,19 @@ const Feedback = () => (
           </p>
         </div>
         <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45px] leading-[39px] text-white">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed ex a nisl aliquam lacinia"
+          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          sed ex a nisl aliquam lacinia&quot;
         </p>
       </motion.div>
       <motion.div
         variants={fadeIn("left", "tween", 0.2, 1)}
         className="relative flex-1 flex justify-center items-center"
       >
-        <img src="/planet-09.png" alt="Planet" className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]" />
+        <img
+          src="/planet-09.png"
+          alt="Planet"
+          className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
+        />
       </motion.div>
     </motion.div>
   </section>

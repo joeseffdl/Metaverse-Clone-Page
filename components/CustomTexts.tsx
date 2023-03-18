@@ -3,7 +3,7 @@ import { textContainer, textVariant2 } from "../utils/motion"
 
 type TextType = {
     title: string 
-    textStyles: string
+    textStyles?: string
 }
 
 export const TypingText = ({ title, textStyles }: TextType) => (
@@ -22,7 +22,7 @@ export const TypingText = ({ title, textStyles }: TextType) => (
     </motion.p>
 )
 
-export const TitleText = ({ title, textStyles }: {title: JSX.Element, textStyles: string}) => (
+export const TitleText = ({ title, textStyles }: {title: string | JSX.Element, textStyles?: string}) => (
   <motion.h2
     variants={textVariant2}
     initial="hidden"
