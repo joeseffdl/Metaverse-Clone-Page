@@ -1,13 +1,18 @@
-interface motionProps {
-  hidden: object
-  show: object
-  direction: string
-  type: string
-  delay: number
-  duration: number
+enum Direction {
+  Left = "left",
+  Right = "right",
+  Up = "up",
+  Down = "down",
 }
 
-type staggerProps = {
+enum TransitionType {
+  Spring = "spring",
+  Tween = "tween",
+  EaseIn = "easeIn",
+  EaseOut = "easeOut",
+}
+
+interface staggerProps {
   staggerChildren: string
   delayChildren: string
 }
@@ -17,7 +22,7 @@ export const navVariants = {
     opacity: 0,
     y: -50,
     transition: {
-      type: "spring",
+      type: TransitionType.Spring,
       stiffness: 300,
       damping: 140,
     },
@@ -26,19 +31,19 @@ export const navVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      type: "spring",
+      type: TransitionType.Spring,
       stiffness: 80,
       delay: 1,
     },
   },
 }
 
-export const slideIn = ({
-  direction,
-  type,
-  delay,
-  duration,
-}: Omit<motionProps, "hidden" | "show">) => ({
+export const slideIn = (
+  direction: string,
+  type: string,
+  delay: number,
+  duration: number
+) => ({
   hidden: {
     x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
     y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
@@ -50,7 +55,7 @@ export const slideIn = ({
       type,
       delay,
       duration,
-      ease: "easeOut",
+      ease: TransitionType.EaseOut,
     },
   },
 })
@@ -77,7 +82,7 @@ export const textVariant = (delay: number) => ({
     y: 0,
     opacity: 1,
     transition: {
-      type: "spring",
+      type: TransitionType.Spring,
       duration: 1.25,
       delay,
     },
@@ -103,21 +108,31 @@ export const textVariant2 = {
     opacity: 1,
     y: 0,
     transition: {
-      type: "tween",
-      ease: "easeIn",
+      type: TransitionType.Tween,
+      ease: TransitionType.EaseIn,
     },
   },
 }
 
-export const fadeIn = ({
-  direction,
-  type,
-  delay,
-  duration,
-}: Omit<motionProps, "hidden" & "show">) => ({
+export const fadeIn = (
+  direction: string,
+  type: string,
+  delay: number,
+  duration: number
+) => ({
   hidden: {
-    x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-    y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+    x:
+      direction === Direction.Left
+        ? 100
+        : direction === Direction.Right
+        ? -100
+        : 0,
+    y:
+      direction === Direction.Up
+        ? 100
+        : direction === Direction.Down
+        ? -100
+        : 0,
     opacity: 0,
   },
   show: {
@@ -128,7 +143,7 @@ export const fadeIn = ({
       type,
       delay,
       duration,
-      ease: "easeOut",
+      ease: TransitionType.EaseOut,
     },
   },
 })
@@ -142,17 +157,14 @@ export const planetVariants = (direction: string) => ({
     x: 0,
     rotate: 0,
     transition: {
-      type: "spring",
+      type: TransitionType.Spring,
       duration: 1.8,
       delay: 0.5,
     },
   },
 })
 
-export const zoomIn = ({
-  delay,
-  duration,
-}: Pick<motionProps, "delay" | "duration">) => ({
+export const zoomIn = (delay: number, duration: number) => ({
   hidden: {
     scale: 0,
     opacity: 0,
@@ -161,10 +173,10 @@ export const zoomIn = ({
     scale: 1,
     opacity: 1,
     transition: {
-      type: "tween",
+      type: TransitionType.Tween,
       delay,
       duration,
-      ease: "easeOut",
+      ease: TransitionType.EaseOut,
     },
   },
 })
@@ -174,7 +186,7 @@ export const footerVariants = {
     opacity: 0,
     y: 50,
     transition: {
-      type: "spring",
+      type: TransitionType.Spring,
       stiffness: 300,
       damping: 140,
     },
@@ -183,7 +195,7 @@ export const footerVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      type: "spring",
+      type: TransitionType.Spring,
       stiffness: 80,
       delay: 0.5,
     },
