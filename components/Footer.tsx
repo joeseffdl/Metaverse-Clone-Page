@@ -23,6 +23,7 @@ const Footer = () => {
       className={`sm:p-16 xs:p-8 px-6 py-12 relative`}
     >
       <div className="footer-gradient" />
+      <div className="footer-gradient" />
       <div className={`2xl:max-w-[1280px] w-full mx-auto flex flex-col gap-8`}>
         <div className="flex flex-col">
           <div className="mb-[50px] h-[2px] bg-white opacity-10" />
