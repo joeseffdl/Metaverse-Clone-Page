@@ -1,7 +1,7 @@
 type StartStepsType = {
-  number: number
-  text: string
-}
+  number: number;
+  text: string;
+};
 
 const StartSteps = ({ number, text }: StartStepsType) => (
   <div className={`flex justify-center items-center flex-row`}>
@@ -14,6 +14,6 @@ const StartSteps = ({ number, text }: StartStepsType) => (
       {text}
     </p>
   </div>
-)
+);
 
-export default StartSteps
+export default StartSteps;

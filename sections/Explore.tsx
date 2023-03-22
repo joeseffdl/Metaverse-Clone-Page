@@ -1,11 +1,11 @@
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { ExploreCard, TitleText, TypingText } from "../components"
-import { staggerContainer } from "../utils/motion"
-import { exploreWorlds } from "../constants"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { ExploreCard, TitleText, TypingText } from "../components";
+import { staggerContainer } from "../utils/motion";
+import { exploreProjects } from "../constants";
 
 const Explore = () => {
-  const [active, setActive] = useState("world-2")
+  const [active, setActive] = useState("world-2");
   return (
     <section className={`sm:p-16 xs:p-8 px-6 py-12`} id="explore">
       <motion.div
@@ -15,21 +15,21 @@ const Explore = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`2xl:max-w-[1280px] w-full mx-auto flex flex-col`}
       >
-        <TypingText title="| The World" textStyles="text-center" />
+        <TypingText title="| Projects |" textStyles="text-center" />
         <TitleText
           title={
             <>
-              Choose the world you want <br className="md:block hidden" /> to
-              explore
+              Browse through my personal <br className="md:block hidden" /> 
+              and collaborative projects
             </>
           }
           textStyles="text-center"
         />
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-          {exploreWorlds.map((world, index) => (
+          {exploreProjects.map((project, index) => (
             <ExploreCard
-              key={world.id}
-              {...world}
+              key={project.id}
+              {...project}
               index={index}
               active={active}
               handleClick={setActive}
@@ -38,7 +38,7 @@ const Explore = () => {
         </div>
       </motion.div>
     </section>
-  )
-}
+  );
+};
 
-export default Explore
+export default Explore;

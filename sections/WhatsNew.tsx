@@ -1,8 +1,8 @@
-import Image from "next/image"
-import { motion } from "framer-motion"
-import { NewFeatures, TitleText, TypingText } from "../components"
-import { staggerContainer, fadeIn, planetVariants } from "../utils/motion"
-import { newFeatures } from "../constants"
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { NewFeatures, TitleText, TypingText } from "../components";
+import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
+import { newFeatures } from "../constants";
 
 const WhatsNew = () => (
   <section className={`sm:p-16 xs:p-8 px-6 py-12 relative z-10`}>
@@ -38,6 +38,6 @@ const WhatsNew = () => (
       </motion.div>
     </motion.div>
   </section>
-)
+);
 
-export default WhatsNew
+export default WhatsNew;

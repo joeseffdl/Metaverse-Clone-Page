@@ -13,8 +13,8 @@ enum TransitionType {
 }
 
 interface staggerProps {
-  staggerChildren: string
-  delayChildren: string
+  staggerChildren: string;
+  delayChildren: string;
 }
 
 export const navVariants = {
@@ -36,7 +36,7 @@ export const navVariants = {
       delay: 1,
     },
   },
-}
+};
 
 export const slideIn = (
   direction: string,
@@ -58,7 +58,7 @@ export const slideIn = (
       ease: TransitionType.EaseOut,
     },
   },
-})
+});
 
 export const staggerContainer: {} = ({
   staggerChildren,
@@ -71,7 +71,7 @@ export const staggerContainer: {} = ({
       delayChildren,
     },
   },
-})
+});
 
 export const textVariant = (delay: number) => ({
   hidden: {
@@ -87,7 +87,7 @@ export const textVariant = (delay: number) => ({
       delay,
     },
   },
-})
+});
 
 export const textContainer = {
   hidden: {
@@ -97,7 +97,7 @@ export const textContainer = {
     opacity: 1,
     transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
   }),
-}
+};
 
 export const textVariant2 = {
   hidden: {
@@ -112,7 +112,7 @@ export const textVariant2 = {
       ease: TransitionType.EaseIn,
     },
   },
-}
+};
 
 export const fadeIn = (
   direction: string,
@@ -146,7 +146,7 @@ export const fadeIn = (
       ease: TransitionType.EaseOut,
     },
   },
-})
+});
 
 export const planetVariants = (direction: string) => ({
   hidden: {
@@ -162,7 +162,7 @@ export const planetVariants = (direction: string) => ({
       delay: 0.5,
     },
   },
-})
+});
 
 export const zoomIn = (delay: number, duration: number) => ({
   hidden: {
@@ -179,7 +179,7 @@ export const zoomIn = (delay: number, duration: number) => ({
       ease: TransitionType.EaseOut,
     },
   },
-})
+});
 
 export const footerVariants = {
   hidden: {
@@ -200,4 +200,4 @@ export const footerVariants = {
       delay: 0.5,
     },
   },
-}
+};

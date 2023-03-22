@@ -32,23 +32,16 @@ function Navigation() {
       <div
         className={`2xl:max-w-[1280px] w-full mx-auto flex justify-between gap-8`}
       >
-        <Image
-          src="/search.svg"
-          alt="Search"
-          width={24}
-          height={24}
-          className="object-contain"
-        />
-        <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
-          Zeph
-        </h2>
-        <Image
+        <Link href="/" className="cursor-pointer text-center font-extrabold text-[24px] leading-[30px] text-white">
+          Home
+        </Link>
+        {/* <Image
           src="/menu.svg"
           alt="Menu"
           width={24}
           height={24}
           className="object-contain"
-        />
+        /> */}
       </div>
       {/* <nav className="py-10 flex align-center justify-center">
         <ul className="flex items-center gap-10 text-xl font-burtons">
@@ -66,6 +59,6 @@ function Navigation() {
         </ul>
       </nav> */}
     </motion.nav>
-  )
+  );
 }
 export default Navigation;

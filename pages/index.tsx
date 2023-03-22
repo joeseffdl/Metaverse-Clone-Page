@@ -1,4 +1,4 @@
-import { Navigation, Footer } from "@/components"
+import { Navigation, Footer } from "@/components";
 import {
   About,
   Explore,
@@ -7,7 +7,7 @@ import {
   Hero,
   Insights,
   WhatsNew,
-} from "@/sections"
+} from "@/sections";
 
 const Home = () => (
   <div className="bg-black overflow-hidden">
@@ -30,6 +30,6 @@ const Home = () => (
     </div>
     <Footer />
   </div>
-)
+);
 
-export default Home
+export default Home;
