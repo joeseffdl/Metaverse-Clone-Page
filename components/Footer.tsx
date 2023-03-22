@@ -3,13 +3,12 @@ import {
   AiFillFacebook,
   AiFillYoutube,
   AiFillGoogleCircle,
-} from "react-icons/ai"
+} from "react-icons/ai";
 import { motion } from "framer-motion";
 import { footerVariants } from "../utils/motion";
 import Link from "next/link";
 
 const Footer = () => {
-  
   const getCurrentYear = () => {
     const date = new Date();
     return date.getFullYear();
@@ -53,6 +52,6 @@ const Footer = () => {
         </div>
       </div>
     </motion.footer>
-  )
-}
+  );
+};
 export default Footer;

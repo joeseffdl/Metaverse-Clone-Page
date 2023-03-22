@@ -30,7 +30,18 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/auth/Navigation.tsx",
-    "app/layout.jsx"
-, "components/Layout.jsx", "utils/motion.ts", "sections/Hero.tsx", "sections/About.tsx", "components/ExploreCard.jsx", "sections/GetStarted.tsx", "sections/WhatsNew.tsx", "sections/World.jsx", "sections/Insights.tsx", "sections/Feedback.tsx", "styles/index.ts"  ],
+    "app/layout.jsx",
+    "components/Layout.jsx",
+    "utils/motion.ts",
+    "sections/Hero.tsx",
+    "sections/About.tsx",
+    "components/ExploreCard.jsx",
+    "sections/GetStarted.tsx",
+    "sections/WhatsNew.tsx",
+    "sections/World.jsx",
+    "sections/Insights.tsx",
+    "sections/Feedback.tsx",
+    "styles/index.ts"
+  ],
   "exclude": ["node_modules"]
 }

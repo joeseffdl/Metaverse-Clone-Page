@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
-import { staggerContainer, fadeIn } from "../utils/motion"
+import { motion } from "framer-motion";
+import { staggerContainer, fadeIn } from "../utils/motion";
 
 const Feedback = () => (
   <section className={`sm:p-16 xs:p-8 px-6 py-12 relative z-10`}>
@@ -17,7 +17,7 @@ const Feedback = () => (
         <div className="feedback-gradient" />
         <div>
           <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40px] leading-[36px] text-white">
-            Zeph
+            Joseph De Leon
           </h4>
           <p className="mt-[8px] sm:text-[16px] text-[12px] sm:leading-[22px] leading-[16px] text-white">
             BS Computer Engineering | Polytechnic University of the Philippines
@@ -33,6 +33,6 @@ const Feedback = () => (
       </motion.div>
     </motion.div>
   </section>
-)
+);
 
-export default Feedback
+export default Feedback;
