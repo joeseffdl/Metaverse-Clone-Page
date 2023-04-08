@@ -35,11 +35,11 @@
     "utils/motion.ts",
     "sections/Hero.tsx",
     "sections/About.tsx",
-    "components/ExploreCard.jsx",
+    "components/ExploreCard.tsx",
     "sections/GetStarted.tsx",
     "sections/WhatsNew.tsx",
     "sections/World.jsx",
-    "sections/Insights.tsx",
+    "sections/Experiences.tsx",
     "sections/Feedback.tsx",
     "styles/index.ts"
   ],

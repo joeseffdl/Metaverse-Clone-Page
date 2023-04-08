@@ -55,23 +55,33 @@ export const newFeatures = [
 export const insights = [
   {
     imgUrl: "/planet-06.png",
-    title: "The launch of the Metaverse makes Elon musk ketar-ketir",
-    subtitle:
-      "Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.",
+    title: "Full Stack Developer",
+    subtitle: "Achieve Without Borders, Inc. (AWB) | Makati City, Philippines",
+    role: [
+      "Design and enhance HRIS sub-module",
+      "Implement and fix HRIS sub-module",
+      "Perform manual testing",
+      "Create user manual",
+      "Presentation of progress",
+    ],
   },
   {
     imgUrl: "/planet-07.png",
-    title: "7 tips to easily master the madness of the Metaverse",
-    subtitle:
-      "Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum",
+    title: "Full Stack Web Developer",
+    subtitle: "DEVKINETICS | Quezon City, Philippines",
+    role: [
+      "Single-handedly managed both frontend and backend of the registration system",
+      "Created a page for registration system's admin panel to generate enrollment codes to be used as payment in the registration process",
+      "Redesigned the registration system's mobile responsiveness using Tailwind CSS",
+      "Migrated 2,000+ data of active users from version 1 to version 2 of the registration system",
+      "Created a custom registration page wherein I replicated necessary procedures from the registration process such as Email validation, Face validation, and ID validation using various Amazon's web services to populate the missing data from version 1 into version 2",
+      "Created, modified, and removed obsolete test cases for the registration then tested it for production using UILicious",
+      "Documented How-Tos and Troubleshooting on things I have implemented for the registration system",
+      "Presented and demonstrated the registration process to a client",
+      "Monitored the Troubleshooting documents of DevOps team, Paced Email, and ShortPixel credits",
+    ]
   },
-  {
-    imgUrl: "/planet-08.png",
-    title: "With one platform you can explore the whole world virtually",
-    subtitle:
-      "Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem",
-  },
-];
+]
 
 export const socials = [
   {

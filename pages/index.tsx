@@ -5,7 +5,7 @@ import {
   Feedback,
   GetStarted,
   Hero,
-  Insights,
+  Experiences,
   WhatsNew,
 } from "@/sections";
 
@@ -24,7 +24,7 @@ const Home = () => (
       <WhatsNew />
     </div>
     <div className="relative">
-      <Insights />
+      <Experiences />
       <div className="gradient-04 z-0" />
       <Feedback />
     </div>
