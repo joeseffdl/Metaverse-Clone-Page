@@ -39,7 +39,7 @@
     "sections/GetStarted.tsx",
     "sections/WhatsNew.tsx",
     "sections/World.jsx",
-    "sections/Insights.tsx",
+    "sections/Experiences.tsx",
     "sections/Feedback.tsx",
     "styles/index.ts"
   ],
