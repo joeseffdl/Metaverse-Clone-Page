@@ -52,7 +52,7 @@ export const newFeatures = [
   },
 ];
 
-export const insights = [
+export const experiences = [
   {
     imgUrl: "/planet-06.png",
     title: "Full Stack Developer",
