@@ -1,4 +1,3 @@
-import CustomNavigation from "../../components/CustomNavigation";
 import Footer from "../../components/Footer";
 
 function todo() {
@@ -10,7 +9,6 @@ export default todo;
 todo.getLayout = function PageLayout(page) {
   return (
     <>
-      <CustomNavigation />
       {page}
       <Footer />
     </>
