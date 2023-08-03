@@ -32,25 +32,26 @@ export const exploreProjects = [
 ]
 
 export const startingFeatures = [
-  "Find a world that suits you and you want to enter",
-  "Enter the world by reading basmalah to be safe",
-  "No need to beat around the bush, just stay on the gas and have fun",
-];
+  "Programming and Markup Languages: C#, CSS, GraphQL, HTML, Java, JavaScript, LaTeX, Markdown, NodeJS, NoSQL, PHP, Python, SQL, TypeScript",
+  "Frameworks and Libraries: Arduino, Axios, Bootstrap, Bulma, Cordova, Django, Express, jQuery, JWT, Material Design, NPM, NextJS, Numpy, Odoo, Pandas, ReactJS, SASS, TailwindCSS, Vue, Quasar, Zustand",
+  "Databases and Cloud Hosting: Amazon DynamoDB, Firebase, GitHub Pages, Heroku, MongoDB, MySQL, Netlify, PostgreSQL, Prisma, Railway, Vercel",
+  "Amazon Web Services: AppSync, Cognito, Comprehend, IAM, Rekognition, DynamoDB. S3 Bucket, GraphQL",
+  "Software and Tools: Adobe Photoshop, Adobe Premiere Pro, Amplify, Amplify Studio, Android, Android Studio, AutoCAD, Canva, Cisco Packet Tracer, Confluence, Docker, Docker Desktop, Figma, Git, GitHub, GitLab, GitHub Desktop, Google Apps/Workspace, Hybiscus, Insomnia, OBS Studio, Postman, Spark Adobe AR, Stack Overflow, Unity, UILicious, Visual Studio Code",
+]
 
 export const newFeatures = [
   {
     imgUrl: "/vrpano.svg",
-    title: "A new world",
+    title: "Web Development",
     subtitle:
-      "we have the latest update with new world for you to try never mind",
+      "Responsible for developing, maintaining, and updating web applications ensuring a secure and compliant with industry standards.",
   },
-  {
-    imgUrl: "/headset.svg",
-    title: "More realistic",
-    subtitle:
-      "In the latest update, your eyes are narrow, making the world more realistic than ever",
-  },
-];
+  // {
+  //   imgUrl: "/headset.svg",
+  //   title: "Mobile Development",
+  //   subtitle: "",
+  // },
+]
 
 export const experiences = [
   {
