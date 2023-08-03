@@ -30,7 +30,7 @@ const GetStarted = () => (
       >
         <TypingText title="| Skills and Expertise" />
         <TitleText title={<>Technologies that I utilize the most</>} />
-        <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
+        <div className="mt-[31px] flex flex-col max-w-[570px] gap-[24px]">
           {startingFeatures.map((feature, index) => (
             <StartSteps key={feature} number={index + 1} text={feature} />
           ))}
